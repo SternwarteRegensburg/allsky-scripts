@@ -2,7 +2,7 @@
 Description=USB power cycle if ASI ZWO is not found
 
 [Timer]
-OnBootSec=5min
+OnBootSec=30min
 OnUnitActiveSec=5min
 Unit=power-cycle-missing-zwo.service
 
