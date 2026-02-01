@@ -1,0 +1,10 @@
+[Unit]
+Description=USB power cycle if ASI ZWO is not found
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/missing-zwo-power-cycle.sh
+
+[Install]
+WantedBy=multi-user.target
